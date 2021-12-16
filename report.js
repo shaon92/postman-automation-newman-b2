@@ -3,6 +3,7 @@ newman.run({
  collection: require('./collection/customerCollection.json'), // pointing to local JSON file.
  environment: require('./collection/customerEnv.json'), // pointing to local env file
  iterationCount: 1,
+ delayRequest: 3000,
  reporters: 'htmlextra',
  reporter: {
     htmlextra: {
